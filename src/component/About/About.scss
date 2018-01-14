@@ -1,0 +1,80 @@
+:local {
+	.about {
+		display: block;
+		position: relative;
+		padding: 20px;
+	//	background: #fff;
+	//	box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+		margin-bottom: 20px;
+		//background: linear-gradient(to right, #fff, #ddd);
+
+		h3 {
+			margin-top: 0;
+		}
+
+		&.sidebar {
+
+		}
+
+		.logo {
+			position: relative;
+			display: inline-block;
+			width: 40px;
+			height: 10px;
+			margin-right: 12px;
+			vertical-align: text-bottom;
+
+			.stop {
+				position: absolute;
+				top: 1px;
+				left: 27px;
+				width: 10px;
+				height: 10px;
+				background: #333;
+			}
+			.play {
+				position: absolute;
+				top: 0;
+				left: 41px;
+				display:block;
+				width: 0;
+				height: 0;
+				border-top: 6px solid transparent;
+				border-bottom: 6px solid transparent;
+				border-left: 10px solid #333;
+			}
+			.ff {
+				position: absolute;
+				top: 0;
+				left: 0px;
+				display:block;
+				width: 0;
+				height: 0;
+				border-top: 6px solid transparent;
+				border-bottom: 6px solid transparent;
+				border-right: 6px solid #333;
+				&:after {
+					content: '';
+					position: absolute;
+					left: 5px;
+					top: -6px;
+					display:block;
+					width: 0;
+					height: 0;
+					border-top: 6px solid transparent;
+					border-bottom: 6px solid transparent;
+					border-right: 6px solid #333;
+				}
+			}
+			.rec {
+				position: absolute;
+				top: 1px;
+				left: 14px;
+				width: 10px;
+				height: 10px;
+				border-radius: 6px;
+				background: #900;
+			}
+		}
+	}
+}

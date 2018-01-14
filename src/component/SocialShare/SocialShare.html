@@ -1,0 +1,15 @@
+<div :class="[$style.share_block,
+		{[$style.sidebar] : this.display === 'sidebar'},
+		{[$style.full] : this.display === 'full'},
+	]">
+	<div :class="$style.content">
+		<h3>Niets missen?</h3>
+		<p>Abonneer je op <i>the making of media</i> via een van deze kanalen.</p>
+
+		<div :class="$style.social_icons">
+			<a href="https://www.facebook.com/themakingofmedia/" target="_blank"  :class="$style.facebook"><Icon name="facebook" /></a>
+			<a href="https://soundcloud.com/themakingofmedia" target="_blank" :class="$style.soundcloud"><Icon name="soundcloud" /></a>
+			<a href="https://itunes.apple.com/nl/podcast/the-making-of-media/id1267460801?mt=2" target="_blank" :class="$style.itunes"><img src="~asset/image/itunes.png"></a>
+		</div>
+	</div>
+</div>

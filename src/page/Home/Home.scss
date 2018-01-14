@@ -1,0 +1,40 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .main {
+    position: relative;
+  }
+
+  .wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    @media (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .column {
+    display: block;
+    max-width: 960px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .side_column {
+    display: block;
+    margin: 0 auto;
+    max-width: 960px;
+
+    @media(min-width: 1280px) {
+      margin: 0 0 0 20px;
+      width: 300px;
+    }
+  }
+
+
+  h2 {
+    font-size: 2.4rem;
+  }
+}

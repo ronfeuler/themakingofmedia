@@ -1,0 +1,94 @@
+:local {
+
+	.share_block{
+		display: block;
+		position: relative;
+		padding: 20px;
+	//	background: #fff;
+	//	box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+		margin-bottom: 20px;
+		//background: linear-gradient(to right, #fff, #ddd);
+
+		h3 {
+			margin-top: 0;
+		}
+
+		.social_icons {
+			display: block;
+
+			a {
+				margin-left: 10px;
+				width: 44px;
+				height: 44px;
+				position: relative;
+				display: inline-block;
+				border-radius: 4px;
+				overflow: hidden;
+				transition-duration: 250ms;
+				vertical-align: top;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				svg {
+					max-width: 100%;
+					max-height: 100%;
+					fill: #fff;
+				}
+
+				&.facebook {
+					background: #3c5a9a;
+
+					svg {
+						width: 33px;
+						height: 33px;
+						position: absolute;
+						top: 26%;
+						left: 20%;
+					}
+
+					&:hover {
+						box-shadow: 0 0 15px rgba(#3c5a9a, 1);
+					}
+				}
+
+				&.soundcloud {
+					background: linear-gradient(to bottom, #f80, #f30);
+
+					&:hover {
+						box-shadow: 0 0 15px rgba(#f30, 1);
+					}
+				}
+
+				&.itunes {
+					background: linear-gradient(to bottom, #fff, #fff);
+
+					img {
+						max-width: 100%;
+						max-height: 100%;
+					}
+
+					&:hover {
+						box-shadow: 0 0 15px rgba(#6699ff, 1);
+					}
+				}
+			}
+		}
+
+		&.sidebar {
+
+		}
+
+		&.full {
+			.social_icons {
+
+				@media(min-width: 768px) {
+					position: absolute;
+					top: 30px;
+					right: 40px;
+				}
+			}
+		}
+	}
+}

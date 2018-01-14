@@ -1,0 +1,27 @@
+:local {
+	.main {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		background: #fff;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+		.wrapper{
+			max-width: 1240px;
+			padding: 0 60px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		p {
+			padding: 8px 0;
+			color: #666;
+		}
+
+		strong, span {
+			white-space: nowrap;
+		}
+	}
+}

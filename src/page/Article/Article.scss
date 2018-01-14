@@ -1,0 +1,146 @@
+:local {
+	.content {
+		position: relative;
+
+		.wrapper {
+			width: 100%;
+			position: relative;
+			margin: 0 auto;
+
+			@media(min-width: 1280px) {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		.column {
+			display: block;
+			max-width: 960px;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.side_column {
+			display: block;
+			margin: 0 auto;
+			max-width: 960px;
+
+			@media(min-width: 1280px) {
+				margin: 0 0 0 20px;
+				width: 300px;
+			}
+		}
+
+		.content {
+			background: #fff;
+			padding: 20px;
+			min-height: 120px;
+			box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+			margin-bottom: 20px;
+		}
+
+		.main_image {
+			position: relative;
+
+			img {
+				display: block;
+				position: relative;
+			}
+
+			@media(min-width: 768px) {
+				&:after {
+					content: ' ';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+					z-index: 1;
+				}
+			}
+		}
+
+		.media_type {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			color: white;
+			font-size: 12px;
+			padding: 2px 10px;
+			text-transform: uppercase;
+			z-index: 2;
+
+			@media(min-width: 768px) {
+				left: 40px;
+				top: 30px;
+				font-size: 14px;
+			}
+		}
+
+		&.podcast .media_type {
+			background: #f6990b;
+		}
+		&.blog .media_type {
+			background: #315bb4;
+		}
+		&.video .media_type {
+			background: #900;
+		}
+
+		h1 {
+			margin-top: 20px;
+			max-width: 500px;
+			font-size: 28px;
+			line-height: 1.1;
+			z-index: 2;
+
+			@media(min-width: 768px) {
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+				font-size: 40px;
+				color: #fff;
+				text-shadow: 1px 1px 10px #000;
+			}
+		}
+		h2 {
+			padding: 40px 0 16px;
+			font-size: 24px;
+		}
+
+		.date {
+			margin-top: 20px;
+			color: #999;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.embed {
+			padding: 20px 0;
+		}
+
+		.article_content {
+			@media(min-width: 1280px) {
+				display: flex;
+
+				.links {
+					margin: 88px 0 0 40px;
+				}
+			}
+		}
+
+		.link {
+			a {
+				display: block;
+			}
+
+			span {
+				display: block;
+			}
+		}
+	}
+}

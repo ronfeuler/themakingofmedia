@@ -1,0 +1,14 @@
+<div :class="[$style.about,
+		{[$style.sidebar] : this.display === 'sidebar'},
+	]">
+	<div :class="$style.content">
+		<h3>the making of media</h3>
+		<p>The making of media is een online serie over media maken. Met podcasts, video's en artikelen nemen we een kijkje achter de schermen in medialand.</p>
+		<div :class="$style.logo">
+			<div :class="$style.stop"></div>
+			<div :class="$style.play"></div>
+			<div :class="$style.ff"></div>
+			<div :class="$style.rec"></div>
+		</div>
+	</div>
+</div>

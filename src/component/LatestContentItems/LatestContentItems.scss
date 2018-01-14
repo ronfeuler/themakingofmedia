@@ -1,0 +1,19 @@
+:local {
+	.latest_podcasts {
+		display: block;
+		position: relative;
+		padding: 20px;
+	//	background: #fff;
+	//	box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+		margin-bottom: 20px;
+		//background: linear-gradient(to right, #fff, #ddd);
+
+		&.sidebar {
+
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
